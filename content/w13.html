@@ -258,7 +258,15 @@ src = open(url).read()
 w13 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w13"].bind("click", w13.prog)
 </script>
-<p><button id="keyword">Keyword</button><button id="w13">列出 10 個座標</button></p><br />Exam << <a href='Exam.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1</div>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/Xiang41023113/e4d226720ea5aaf6ee09f5002891fa00/raw/9b6d62e6537ede8221b78882a143186c35f189a0/W13-2"
+src = open(url).read()
+w13_1 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w13_1"].bind("click", w13_1.prog)
+</script>
+<p><button id="keyword">Keyword</button><button id="w13">列出 10 個座標</button><button id="w13_1">畫出表格</button></p><br />Exam << <a href='Exam.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1</div>
         
     <!-- footer -->
       <div class="container">
